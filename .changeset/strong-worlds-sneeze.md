@@ -1,0 +1,5 @@
+---
+"aura": patch
+---
+
+fix slider
