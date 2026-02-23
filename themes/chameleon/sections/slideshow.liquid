@@ -1,6 +1,10 @@
 {{ 'section.slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'section.slideshow.js' | asset_url | script_tag_deferred }}
 
+{% comment %}
+  change 1
+{% endcomment %}
+
 <ui-slideshow
   section="slideshow"
   style="--slideshow-height: {{ section.settings.height }}vh;"
