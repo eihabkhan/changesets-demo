@@ -1,0 +1,179 @@
+{
+  "general": {
+    "show_more_button": "Show more",
+    "size_big_message": "Please upload an image less than 2mb",
+    "buy_now": "Buy now",
+    "add_to_cart": "Add to cart"
+  },
+  "head_metadata": {
+    "collections": "Collections",
+    "thankyou": "Thank you",
+    "cart": "Shopping Cart"
+  },
+  "notice_bar": {
+    "title": "Special offer: free delivery, pay on delivery, faster and order now"
+  },
+  "navbar": {
+    "search": {
+      "placeholder": "Enter keyword to search for..."
+    }
+  },
+  "featured_products": {
+    "title": "Featured Products"
+  },
+  "featured_collections": {
+    "title": "Featured Collections"
+  },
+  "list_collections": {
+    "title": "Collections"
+  },
+  "product_slider": {
+    "title": "⚡︎Special Offer",
+    "ends_at": "Ends at:"
+  },
+  "related_products": {
+    "title": "Related products"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "ratings": "Ratings",
+    "upload_image": "Upload image (PNG, JPEG)",
+    "add_review": "Add your comment",
+    "thankyou_review": "Thank you for your review.",
+    "review_apending": "Your review is awaiting approval",
+    "first_name_placeholder": "First name",
+    "last_name_placeholder": "Last name",
+    "email_placeholder": "Email",
+    "review_placeholder": "Your review",
+    "submit_button": "Submit",
+    "review_submited": "Review submitted successfully",
+    "errors_message": "Failed to submit review. Please try again."
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "cart": "Your basket",
+    "items_count": "Items",
+    "total_amount": "Total",
+    "empty_cart": "Your cart is currently empty.",
+    "items": {
+      "items_name": "Items",
+      "quantity": "Quantity",
+      "total": "Total",
+      "product_name": "Product name",
+      "remove_cta": "Remove"
+    },
+    "summary": {
+      "title": "Order Summary",
+      "promo": "Promo Code",
+      "promo_input": "Enter your code",
+      "promo_cta": "Apply",
+      "total": "Total cost",
+      "checkout_cta": "Checkout",
+      "continue_shppping": "Continue your purchases",
+      "discount": "Discount",
+      "coupon": "Coupon",
+      "coupon_applied": "Coupon applied successfully",
+      "coupon_removed": "Coupon removed successfully",
+      "shipping": "Shipping",
+      "shipping_not_calculated": "Not calculated"
+    },
+    "empty": {
+      "title": "Your cart is currently empty.",
+      "description": "Before you proceed to checkout you must add some products to your shopping cart. <br\/> You will find a lot of interesting products on our \"Shop\" page.",
+      "cta": "Return to shop"
+    },
+    "continue_shopping_cta": "Continue Shopping"
+  },
+  "search": {
+    "empty": {
+      "title": "No results",
+      "description": "The page you are looking for does not exist",
+      "home_page": "Home page"
+    }
+  },
+  "thankyou": {
+    "default_title": "Your order has been successfully placed",
+    "default_subtitle": "Thank you for choosing our store",
+    "default_description": "We are happy that you have chosen our store and we hope that your experience with our products will be very special. We will send you a shipping confirmation once your order is shipped",
+    "return_cta": "Return to shop",
+    "details": {
+      "title": "Order details",
+      "payment_status": "Payment Status",
+      "shipping_cost": "Shipping Cost",
+      "sub_total": "Subtotal",
+      "total": "Total",
+      "product": "Produit",
+      "one_piece_price": "Unit price",
+      "quantity": "Quantity",
+      "coupon": "Coupon",
+      "vat": "VAT",
+      "free_shipping": "Free"
+    }
+  },
+  "snippets": {
+    "product_preview": {
+      "cta_button": "Shop now"
+    },
+    "single_product": {
+      "stock": "Products remaining in stock",
+      "quantity": "Quantity",
+      "variants": {
+        "upload": "Upload an image"
+      }
+    },
+    "collection-listing": {
+      "home": "Home",
+      "collections": "Collections"
+    },
+    "main_sort": {
+      "order_by": "Order by",
+      "price_asc": "Price: Low to High",
+      "price_desc": "Price: High to Low",
+      "created_at_asc": "Oldest",
+      "created_at_desc": "Newest",
+      "title_asc": "Alphabetically: A-Z",
+      "title_desc": "Alphabetically: Z-A"
+    }
+  },
+  "upsell": {
+    "yes_submit_button": "Yes",
+    "no_submit_button": "No"
+  },
+  "footer": {
+    "blocks": {
+      "privacy": {
+        "title": "Privacy"
+      },
+      "social": {
+        "title": "Social Media"
+      },
+      "contact": {
+        "title": "Contact Us"
+      }
+    },
+    "copyright": {
+      "title": "© %. All rights reserved"
+    }
+  },
+  "errors": {
+    "select_variant": "Please select a variant",
+    "quantity_smaller_than_zero": "Quantity must be greater than 0",
+    "upload_image": "Please upload an image",
+    "product_added": "Product has been added successfully",
+    "empty_inventory": "Product out of stock",
+    "max_quantity": "The available quantity for this variant is: ",
+    "invalid_phone_number": "Please enter a valid phone number."
+  },
+  "page": {
+    "contact": {
+      "title": "Contact us",
+      "subtitle": "Having a request, facing an issue: Reach out to us",
+      "form_placeholders": {
+        "email": "Email *",
+        "subject": "Subject *",
+        "message": "Message *"
+      },
+      "button": "Send"
+    }
+  }
+}

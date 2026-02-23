@@ -1,0 +1,179 @@
+{
+  "general": {
+    "show_more_button": "عرض المزيد",
+    "size_big_message": "المرجو تحميل صورة أقل من 2mb",
+    "buy_now": "اشتري الأن",
+    "add_to_cart": "أضف إلى السلة"
+  },
+  "head_metadata": {
+    "collections": "التصنيفات",
+    "thankyou": "شكرا جزيلا على ثقتكم",
+    "cart": "سلة مشترياتي"
+  },
+  "notice_bar": {
+    "title": "عرض خاص: توصيل مجاني، الدفع عند الاستلام، أسرع واطلب الآن"
+  },
+  "navbar": {
+    "search": {
+      "placeholder": "أدخل الكلمة الرئيسية للبحث عنها..."
+    }
+  },
+  "featured_products": {
+    "title": "المنتجات الأكتر مبيعاً"
+  },
+  "featured_collections": {
+    "title": "تصنيفات رائجة"
+  },
+  "list_collections": {
+    "title": "مجموعات"
+  },
+  "product_slider": {
+    "title": "⚡︎عرض خاص",
+    "ends_at": "ينتهي في :"
+  },
+  "related_products": {
+    "title": "منتجات ذات صلة"
+  },
+  "reviews": {
+    "title": "التعليقات",
+    "ratings": "التقييمات",
+    "upload_image": "تحميل الصورة (PNG، JPEG)",
+    "add_review": "أضف تعليقك",
+    "thankyou_review": "شكرا لك على تعليقك",
+    "review_apending": "سوف يتم مراجعة تعليقك من طرف إدارة الموقع",
+    "first_name_placeholder": "الاسم الأول",
+    "last_name_placeholder": "الاسم الأخير",
+    "email_placeholder": "البريد الإلكتروني",
+    "review_placeholder": "تعليقك",
+    "submit_button": "إرسال",
+    "review_submited": "تم إرسال تعليقك بنجاح",
+    "errors_message": "فشل في إرسال التعليق. الرجاء إعادة المحاولة."
+  },
+  "cart": {
+    "title": "عربة التسوق",
+    "cart": "سلتك",
+    "total_amount": "مجموع سلة التسوق",
+    "empty_cart": "عربة التسوق فارغة.",
+    "items_count": "عناصر",
+    "items": {
+      "items_name": "عناصر",
+      "quantity": "الكمية",
+      "total": "المجموع",
+      "product_name": "اسم المنتوج",
+      "remove_cta": "إزالة"
+    },
+    "summary": {
+      "title": "ملخص الطلب",
+      "promo": "رمز الترويج",
+      "promo_input": "أدخل رمزك",
+      "promo_cta": "تطبيق",
+      "total": "التكلفة الإجمالية",
+      "checkout_cta": "الدفع",
+      "continue_shppping": "استمر في التسوق",
+      "discount": "خصم",
+      "coupon": "كوبون",
+      "coupon_applied": "تم تطبيق الكوبون بنجاح",
+      "coupon_removed": "تمت إزالة الكوبون بنجاح",
+      "shipping": "الشحن",
+      "shipping_not_calculated": "غير محسوب"
+    },
+    "empty": {
+      "title": "عربتك فارغة حاليًا.",
+      "description": "قبل أن تقوم بالدفع، يجب عليك إضافة بعض المنتجات إلى عربة التسوق الخاصة بك. <br\/> ستجد الكثير من المنتجات المثيرة للاهتمام في متجرنا.",
+      "cta": "عودة إلى المتجر"
+    },
+    "continue_shopping_cta": "متابعة التسوق"
+  },
+  "search": {
+    "empty": {
+      "title": "نأسف!",
+      "description": "إن الصفحة التي تبحث عنها غير موجودة.",
+      "home_page": "الصفحة الرئيسية"
+    }
+  },
+  "thankyou": {
+    "default_title": "لقد تم تسجيل طلبك بنجاح",
+    "default_subtitle": "شكرا لك على اختيار متجرنا",
+    "default_description": "نحن سعداء لاختيارك متجرنا ونتمنى ان تكون تجربتك مع منتجاتنا جد مميزة، سنرسل لك تأكيدا بالشحن بمجرد شحن طلبك",
+    "return_cta": "الصفحة الرئيسية ",
+    "details": {
+      "title": "ملخص الفاتورة",
+      "payment_status": "حالة الدفع",
+      "shipping_cost": "الشحن والتسليم",
+      "sub_total": "المجموع الجزئي",
+      "total": "المجموع الكلي",
+      "product": "السلع",
+      "one_piece_price": "سعر كل قطعة",
+      "quantity": "الكمية",
+      "coupon": "كوبون",
+      "vat": "الضريبة على القيمة المضافة",
+      "free_shipping": "مجاني"
+    }
+  },
+  "snippets": {
+    "product_preview": {
+      "cta_button": "تسوق الآن"
+    },
+    "single_product": {
+      "stock": "المنتجات المتبقية في المخزون",
+      "quantity": "الكمية",
+      "variants": {
+        "upload": "تحميل صورة (PNG, JPEG)"
+      }
+    },
+    "collection-listing": {
+      "home": "الرئيسية",
+      "collections": "التصنيفات"
+    },
+    "main_sort": {
+      "order_by": "ترتيب حسب",
+      "price_asc": "السعر: من الأقل إلى الأعلى",
+      "price_desc": "السعر: من الأعلى إلى الأقل",
+      "created_at_asc": "الأقدم",
+      "created_at_desc": "الأحدث",
+      "title_asc": "الأبجدية: من الأقل إلى الأعلى",
+      "title_desc": "الأبجدية: من الأعلى إلى الأقل"
+    }
+  },
+  "upsell": {
+    "yes_submit_button": "إطلب الأن",
+    "no_submit_button": "لا شكراً لست مهتماً"
+  },
+  "footer": {
+    "blocks": {
+      "privacy": {
+        "title": "الخصوصية"
+      },
+      "social": {
+        "title": "وسائل التواصل الإجتماعي"
+      },
+      "contact": {
+        "title": "اتصل بنا"
+      }
+    },
+    "copyright": {
+      "title": "© %. كل الحقوق محفوظة"
+    }
+  },
+  "errors": {
+    "select_variant": "الرجاء اختيار عرض",
+    "quantity_smaller_than_zero": "يجب أن تكون الكمية أكبر من 0",
+    "upload_image": "الرجاء تحميل صورة",
+    "product_added": "تمت إضافة المنتج بنجاح",
+    "empty_inventory": "المُنتج غير متوفر حاليًا في المخزون",
+    "max_quantity": "الكمية المتاحة لهذا العرض هي: ",
+    "invalid_phone_number":  "يرجى إدخال رقم هاتف صحيح."
+  },
+  "page": {
+    "contact": {
+      "title": "اتصل بنا",
+      "subtitle": "إذا كان لديك أي استفسار أو كنت بحاجة إلى مساعدة في حل مشكلة ما، فنحن بانتظار رسالتك",
+      "form_placeholders": {
+        "email": "البريد الإلكتروني *",
+        "subject": "الموضوع *",
+        "message": "الرسالة *"
+      },
+      "button": "إرسال"
+    }
+  }
+}

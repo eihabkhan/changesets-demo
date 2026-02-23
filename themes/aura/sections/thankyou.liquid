@@ -1,0 +1,179 @@
+{{ 'thankyou.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+.title {
+  color: {{ section.settings.title_color.hex }};
+}
+
+.subtitle {
+  color: {{ section.settings.subtitle_color.hex }};
+}
+
+
+{% endstyle %}
+
+<div class="thankyou-page-container">
+  <div class='thankyou-wrapper'>
+    <div class='py-12'>
+      <div class='content-wrapper'>
+        {%- if section.settings.upload_thankyou_img.src -%}
+          <img loading='lazy' class='image' src="{{ section.settings.upload_thankyou_img.src }}" alt='Upload thank you image'>
+        {% else %}
+          <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon>
+        {%- endif -%}
+        <div class="heading">
+          <div class='title'>
+            {{ section.settings.title | default: 'thankyou.default_title' | t }}
+            <div class='subtitle'>
+              {{ section.settings.subtitle | default: 'thankyou.default_subtitle' | t }}
+            </div>
+          </div>
+        </div>
+        <div class='description'>
+          {{ section.settings.description | default: 'thankyou.default_description' | t }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-items">
+    <table>
+      <thead>
+        <tr>
+          <th>{{ 'thankyou.details.product' | t }}</th>
+          <th>{{ 'thankyou.details.one_piece_price' | t }}</th>
+          <th>{{ 'thankyou.details.quantity' | t }}</th>
+          <th class="total">{{ 'thankyou.details.sub_total' | t }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in order.order_variants %}
+          <tr>
+            <td class="product-name">
+              <a href="/products/{{- item.slug -}}" target="_blank">{{- item.name -}}</a>
+            </td>
+            <td>
+              <span>{{- item.price | money -}}</span>
+            </td>
+            <td>
+              <span>{{- item.quantity -}}</span>
+            </td>
+            <td class="total">
+              <span>{{- item.price * item.quantity | money -}}</span>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="order-details">
+    <h2> {{ 'thankyou.details.title' | t }}</h2>
+    <div class="table-content">
+    <div class="head">
+      <div class="item">
+          {{ 'thankyou.details.product' | t }}
+        </div>
+        <div class="data-item">
+          <span>{{- order.sub_total | money -}}</span>
+        </div>
+    </div>
+    {%- if order.coupon -%}
+      <div class="head coupon-head">
+        <div class="item">
+          {{- 'thankyou.details.coupon' | t -}}
+        </div>
+        <div class="data-item">
+          {%- if order.coupon.is_percentage -%}
+            <div class="coupon-data">
+              <span class="coupon-discount">{{- order.coupon.deducted_amount | money -}}</span>
+              <span>({{- order.coupon.value -}}%)</span>
+            </div>
+          {%- else -%}
+            <span class="coupon-discount">{{- order.coupon.value | money -}}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+    <div class="head">
+      <div class="item">
+        {{ 'thankyou.details.shipping_cost' | t }}
+      </div>
+      <div class="data-item">
+        {% if order.shippingCost == 0 %}
+          {{ 'thankyou.details.free_shipping' | t }}
+        {% else %}
+          {{ order.shippingCost | money }}
+        {% endif %}
+      </div>
+    </div>
+    {%- if store.vat > 0 -%}
+      <div class="head">
+        <div class="item">
+          {{- 'thankyou.details.vat' | t -}}
+        </div>
+        <div class="data-item">
+          <span>{{- order.total_tax_amount | money -}}</span>
+          <span>({{- store.vat -}}%)</span>
+        </div>
+      </div>
+    {%- endif -%}
+    <div class="total-price-head">
+      <div class="item">
+        {{ 'thankyou.details.total' | t }}
+      </div>
+      <div class="data-item">
+        {{- order.total | money -}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home-page">
+  <a
+    href='/'
+    class='yc-btn-secondary--large'
+  >
+        <ion-icon name="home-outline"></ion-icon>
+        {{ 'thankyou.return_cta' | t }}
+      </a>
+</div>
+</div>
+
+{%- schema -%}
+{
+  "label": "Thank you page",
+  "templates": ["thankyou"],
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle color"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "upload_thankyou_img",
+      "label": "Upload thank you image"
+    }
+  ]
+}
+{%- endschema -%}

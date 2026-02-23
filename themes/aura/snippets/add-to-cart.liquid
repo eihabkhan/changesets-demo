@@ -1,0 +1,28 @@
+{%- assign uniq = 0 | rand %}
+
+{%- style -%}
+  .yc-{{ uniq }}-add-to-cart button {
+    background: {{ background_color.hex }} !important;
+    width: 100%;
+    padding: 12px;
+  }
+  .yc-{{ uniq }}-add-to-cart button span {
+    font-weight: 600;
+    color: {{ text_color.hex }} !important;
+  }
+{%- endstyle -%}
+
+<div class='yc-{{ uniq }}-add-to-cart{% if is_sticky %} is_sticky{% endif %}'>
+  <button class='yc-btn add-to-cart-button' data-type="" {% if is_placeholder %} disabled {% endif %} onclick='addToCart("{{ snippetId }}")'>
+    <span class='spinner hidden' id='loading__cart'></span>
+    {% if skip_cart %}
+      <span>{{ 'snippets.product_preview.cta_button' | t }}</span>
+    {% else %}
+      <span>{{ text | default: 'general.add_to_cart' | t  }}</span>
+    {% endif %}
+  </button>
+</div>
+
+{% javascript %}
+  const IS_CART_SKIPED = Boolean("{{ skip_cart }}");
+{% endjavascript %}

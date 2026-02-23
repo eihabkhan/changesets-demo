@@ -1,0 +1,16 @@
+{
+  "label": "Collection",
+  "layout": "theme",
+  "sections": {
+      "thankyou": {
+          "type": "thankyou",
+          "settings": {
+              "title_color": "#000000FF",
+              "subtitle_color": "#000000FF"
+          }
+      }
+  },
+  "order": [
+      "thankyou"
+  ]
+}

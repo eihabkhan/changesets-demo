@@ -1,0 +1,58 @@
+{{ 'section.product-reviews.css' | asset_url | stylesheet_tag }}
+{% if product.id %}
+  {{ 'section.product-reviews.js' | asset_url | script_tag_deferred }}
+{% endif %}
+
+<ui-product-reviews section="product-reviews" product-id="{{ product.id }}">
+  <div class="section-head">
+    <h2>{{ section.settings.title }}</h2>
+    {% render 'misc-add-review', product_id: product.id %}
+  </div>
+  <ul class="section-core">
+    {% render 'block-review' %}
+  </ul>
+  {% if product.id %}
+    <ul class="section-core" ui-product-reviews-skeleton>
+      {% for skeleton in (1..4) %}
+        <li block="review" class="skeleton">
+          <div class="content">
+            {% for line in (1..2) %}
+              <div class="sk line"></div>
+            {% endfor %}
+          </div>
+          <div class="author">
+            <div class="sk line"></div>
+            <div class="rating">
+              <div class="stars">
+                {% for star in (1..5) %}
+                  <div class="sk icon"></div>
+                {% endfor %}
+              </div>
+              <div class="sk line"></div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="show-more" ui-product-reviews-show-more>
+      <div ui-link role="button">{{ 'general.show_more' | t }}</div>
+    </div>
+  {% endif %}
+  {% render 'misc-show-images' %}
+</ui-product-reviews>
+
+{% schema %}
+{
+  "label": "t:sections.product_reviews.label",
+  "templates": ["product"],
+  "limit": 1,
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "t:common.content.title",
+      "default": "Honest Reviews"
+    }
+  ]
+}
+{% endschema %}

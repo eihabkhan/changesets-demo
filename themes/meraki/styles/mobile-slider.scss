@@ -1,0 +1,36 @@
+@import 'helpers/mixins';
+
+.yc-slider__mobile {
+  @include breakpoint('md') {
+    display: none;
+  }
+
+  .content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: var(--alignment);
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .btn-holder {
+      display: flex;
+      justify-content: var(--alignment);
+    }
+  }
+}

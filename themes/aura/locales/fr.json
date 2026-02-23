@@ -1,0 +1,179 @@
+{
+  "general": {
+    "show_more_button": "Voir plus",
+    "size_big_message": "Veuillez télécharger une image de moins de 2 Mo",
+    "buy_now": "Acheter",
+    "add_to_cart": "Ajouter au panier"
+  },
+  "head_metadata": {
+    "collections": "Collections",
+    "thankyou": "Merci",
+    "cart": "Panier d'achat"
+  },
+  "notice_bar": {
+    "title": "Offre spéciale : livraison gratuite, paiement à la livraison, plus rapide et commandez maintenant"
+  },
+  "navbar": {
+    "search": {
+      "placeholder": "Entrez un mot-clé à rechercher..."
+    }
+  },
+  "featured_products": {
+    "title": "Produits en vedette"
+  },
+  "featured_collections": {
+    "title": "Collections en vedette"
+  },
+  "list_collections": {
+    "title": "Collections"
+  },
+  "product_slider": {
+    "title": "⚡︎Offre spéciale",
+    "ends_at": "Finit à :"
+  },
+  "related_products": {
+    "title": "Produits connexes"
+  },
+  "reviews": {
+    "title": "Commentaires",
+    "ratings": "Évaluations",
+    "upload_image": "Télécharger une image (PNG, JPEG)",
+    "add_review": "Ajouter un commentaire",
+    "thankyou_review": "Merci pour votre commentaire",
+    "review_apending": "Votre commentaire est en attente de modération",
+    "first_name_placeholder": "Prénom",
+    "last_name_placeholder": "Nom",
+    "email_placeholder": "E-mail",
+    "review_placeholder": "Votre commentaire",
+    "submit_button": "Envoyer",
+    "review_submited": "Commentaire soumis avec succès",
+    "errors_message": "Échec de la soumission de l'avis. Veuillez réessayer."
+  },
+  "cart": {
+    "title": "Panier d'achat",
+    "cart": "votre panier",
+    "items_count": "Articles",
+    "total_amount": "Total",
+    "empty_cart": "Votre panier est vide",
+    "items": {
+      "items_name": "Articles",
+      "quantity": "Quantité",
+      "total": "Total",
+      "product_name": "Nom du produit",
+      "remove_cta": "Supprimer"
+    },
+    "summary": {
+      "title": "Résumé de la commande",
+      "promo": "Code promotionnel",
+      "promo_input": "Entrez votre code",
+      "promo_cta": "Appliquer",
+      "total": "Coût total",
+      "checkout_cta": "Paiement",
+      "continue_shppping": "Continuer vos achats",
+      "discount": "Réduction",
+      "coupon": "Coupon",
+      "coupon_applied": "Coupon appliqué avec succès",
+      "coupon_removed": "Coupon supprimé avec succès",
+      "shipping": "Livraison",
+      "shipping_not_calculated": "Non calculé"
+    },
+    "empty": {
+      "title": "Votre panier est actuellement vide.",
+      "description": "Avant de procéder au paiement, vous devez ajouter des produits à votre panier d'achat. <br\/> Vous trouverez beaucoup de produits intéressants sur notre page \"Shop\".",
+      "cta": "Retour au magasin"
+    },
+    "continue_shopping_cta": "Continuer les achats"
+  },
+  "search": {
+    "empty": {
+      "title": "Aucun résultat",
+      "description": "Votre recherche n'a donné aucun résultat.",
+      "home_page": "Page d'accueil"
+    }
+  },
+  "thankyou": {
+    "default_title": "Votre commande a été passée avec succès",
+    "default_subtitle": "Merci d'avoir choisi notre magasin",
+    "default_description": "Nous sommes heureux que vous ayez choisi notre magasin et nous espérons que votre expérience avec nos produits sera très spéciale. Nous vous enverrons une confirmation d'expédition une fois votre commande expédiée",
+    "return_cta": "Retour au magasin",
+    "details": {
+      "title": "Détails de la commande",
+      "payment_status": "Statut du paiement",
+      "shipping_cost": "Coût d'expédition",
+      "sub_total": "Sous-total",
+      "total": "Total",
+      "product": "Produit",
+      "one_piece_price": "Prix unité",
+      "quantity": "Quantité",
+      "coupon": "Coupon",
+      "vat": "VAT",
+      "free_shipping": "Gratuite"
+    }
+  },
+  "snippets": {
+    "product_preview": {
+      "cta_button": "Magasiner maintenant"
+    },
+    "single_product": {
+      "stock": "Produits restants en stock",
+      "quantity": "Quantité",
+      "variants": {
+        "upload": "Télécharger une image"
+      }
+    },
+    "collection-listing": {
+      "home": "Accueil",
+      "collections": "Collections"
+    },
+    "main_sort": {
+      "order_by": "Trier par",
+      "price_asc": "Prix: du plus bas au plus élevé",
+      "price_desc": "Prix: du plus élevé au plus bas",
+      "created_at_asc": "Le plus ancien",
+      "created_at_desc": "Le plus récent",
+      "title_asc": "Alphabétique: de A à Z",
+      "title_desc": "Alphabétique: de Z à A"
+    }
+  },
+  "upsell": {
+    "yes_submit_button": "Oui",
+    "no_submit_button": "No"
+  },
+  "footer": {
+    "blocks": {
+      "privacy": {
+        "title": "Confidentialité"
+      },
+      "social": {
+        "title": "Médias sociaux"
+      },
+      "contact": {
+        "title": "Contactez-nous"
+      }
+    },
+    "copyright": {
+      "title": "© %. Tous droits réservés"
+    }
+  },
+  "errors": {
+    "select_variant": "Veuillez sélectionner une variante",
+    "quantity_smaller_than_zero": "La quantité doit être supérieure à 0",
+    "upload_image": "Veuillez télécharger une image",
+    "product_added": "Produit ajouté avec succès",
+    "empty_inventory": "Produit en rupture de stock",
+    "max_quantity": "La quantité disponible pour cette variante est : ",
+    "invalid_phone_number": "Veuillez saisir un numéro de téléphone valide."
+  },
+  "page": {
+    "contact": {
+      "title": "Contactez nous",
+      "subtitle": "Vous avez une demande, vous rencontrez un problème : Contactez-nous",
+      "form_placeholders": {
+        "email": "E-mail *",
+        "subject": "Sujet *",
+        "message": "Message *"
+      },
+      "button": "Envoyer"
+    }
+  }
+}

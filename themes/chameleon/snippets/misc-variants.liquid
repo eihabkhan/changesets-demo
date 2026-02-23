@@ -1,0 +1,135 @@
+{{ 'misc.variants.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  Renders a product variant options
+
+  Usage:
+  {% render 'misc-variants' %}
+{% endcomment %}
+
+<ul ui-variants>
+  {% for variant in product.options %}
+    {% assign default = '' %}
+    {% assign name_id = 100 | rand: 2000 %}
+    {% assign unique_name = variant.name | append: '_' | append: name_id %}
+
+    {% for variation in product.selected_or_first_available_variant.variations %}
+      {% if variation[0] == variant.name %}
+        {% assign default = variation[1] %}
+      {% endif %}
+    {% endfor %}
+
+    <li ui-variant="{{ variant.type }}">
+      <label for="{{ unique_name }}" ui-variant-label>{{ variant.name }}</label>
+      {% if variant.type == 'textual_buttons' %}
+        <div ui-variant-options>
+          {% for opt in variant.values %}
+            <label ui-variant-opt>
+              {{ opt }}
+              <input
+                type="radio"
+                name="{{ unique_name }}"
+                value="{{ opt }}"
+                {% if opt == default %}
+                  checked
+                {% endif %}
+              >
+            </label>
+          {% endfor %}
+        </div>
+      {% elsif variant.type == 'radio_buttons' %}
+        <div ui-variant-options>
+          {% for opt in variant.values %}
+            <label ui-variant-opt>
+              <input
+                type="radio"
+                name="{{ unique_name }}"
+                value="{{ opt }}"
+                {% if opt == default %}
+                  checked
+                {% endif %}
+              >
+              {{ opt }}
+            </label>
+          {% endfor %}
+        </div>
+      {% elsif variant.type == 'color_base_buttons' %}
+        <div ui-variant-options>
+          {% for opt in variant.values %}
+            <label ui-variant-opt style="--variant-color: {{ opt.preview }}">
+              <input
+                type="radio"
+                name="{{ unique_name }}"
+                value="{{ opt.value }}"
+                {% if opt.value == default %}
+                  checked
+                {% endif %}
+              >
+            </label>
+          {% endfor %}
+        </div>
+      {% elsif variant.type == 'dropdown' %}
+        <select ui-variant-options name="{{ unique_name }}">
+          {% for opt in variant.values %}
+            <option
+              value="{{ opt }}"
+              {% if opt == default %}
+                selected
+              {% endif %}
+            >
+              {{ opt }}
+            </option>
+          {% endfor %}
+        </select>
+      {% elsif variant.type == 'image_based_buttons' %}
+        <div ui-variant-options>
+          {% for opt in variant.values %}
+            <label ui-variant-opt>
+              {% if opt.preview %}
+                <img
+                  src="{{ opt.preview }}"
+                  alt="{{ opt.value }}"
+                  height="70"
+                  width="70"
+                >
+              {% else %}
+                {% render 'ui-icon', name: 'image', filled: true %}
+              {% endif %}
+              <input
+                type="radio"
+                name="{{ unique_name }}"
+                value="{{ opt.value }}"
+                {% if opt.value == default %}
+                  checked
+                {% endif %}
+              >
+            </label>
+          {% endfor %}
+        </div>
+      {% elsif variant.type == 'upload_image_zone' %}
+        <div ui-variant-upload>
+          <label ui-variant-upload-input>
+            <input
+              accept="image/png, image/gif, image/jpg, image/jpeg, image/webp"
+              name="{{ unique_name }}"
+              type="file"
+            >
+            <div class="icon">
+              {% render 'ui-icon', name: 'upload', size: 32 %}
+            </div>
+            <div class="content">
+              <span class="label">{{ 'product.upload_image.label' | t }}</span>
+              <span class="accept">{{ 'product.upload_image.accept' | t }}</span>
+            </div>
+          </label>
+          <div ui-variant-upload-output hidden>
+            <img src="" alt="" width="100%" height="100%">
+            <button type="button" ui-button data-variant="secondary" data-size="xs" as-icon aria-label="remove">
+              {% render 'ui-icon', name: 'close' %}
+            </button>
+          </div>
+        </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
