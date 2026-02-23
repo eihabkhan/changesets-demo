@@ -1,5 +1,9 @@
 {% assign count = 0 %}
 
+{% comment %}
+  change 1
+{% endcomment %}
+
 <style>
   .slide-box {
     -webkit-justify-content: flex-end;
@@ -44,33 +48,33 @@
 </style>
 
 <div
-  class='splide yc-slider__{{ view }}'
-  id='yc_slider_{{ id }}'
+  class="splide yc-slider__{{ view }}"
+  id="yc_slider_{{ id }}"
   style="
     --desktop-height: '{{ section.settings.slider_height_percentage }}vh';
     --mobile-height: '{{ section.settings.slider_mobile_height_percentage }}vh';
   "
 >
-  <div class='splide__track'>
-    <ul class='splide__list'>
+  <div class="splide__track">
+    <ul class="splide__list">
       {%- for block in blocks %}
         {% assign count = count | plus: 1 %}
         <li
-          class='splide__slide hero-image-{{ forloop.index }}'
+          class="splide__slide hero-image-{{ forloop.index }}"
           style="width: 100%;"
           {{ block.youcan_attributes }}
         >
           {%- if block.settings.caption %}
             <div
-              class='content'
+              class="content"
               style="--alignment: {{ block.settings.content_alignment }}"
             >
-              <div class='caption w-full'>{{ block.settings.caption }}</div>
+              <div class="caption w-full">{{ block.settings.caption }}</div>
               {% if block.settings.product %}
                 <div class="btn-holder">
                   <a
-                    href='{{ block.settings.product.url }}'
-                    class='yc-btn slide-content-box-button btn-{{ forloop.index }}'
+                    href="{{ block.settings.product.url }}"
+                    class="yc-btn slide-content-box-button btn-{{ forloop.index }}"
                   >
                     {{ block.settings.button_text | default: 'general.buy_now' | t }}
                   </a>
