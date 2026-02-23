@@ -1,6 +1,6 @@
 {
   "name": "youcan-themes",
-  "version": "4.4.7",
+  "version": "4.4.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "changeset": "changeset",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset tag",
-    "release": "bumpp --execute 'pnpm run zip'"
+    "release": "pnpm changeset:version && pnpm changeset:publish"
   },
   "keywords": [],
   "author": "",
