@@ -9,7 +9,7 @@
     "changeset": "changeset",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset tag",
-    "release": "pnpm changeset:version && pnpm changeset:publish"
+    "release": "bumpp --execute 'pnpm run zip'"
   },
   "keywords": [],
   "author": "",
